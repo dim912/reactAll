@@ -84,3 +84,18 @@ Element is like a single frame in a movie
 * ReactDOM do diff and update only required elements in browser DOM
 
 */
+
+
+/**
+ * Simple Component => component is a blueprint which is used to create elements
+ *
+ *
+        function Comp() {
+            return <div>
+                <h>
+                    Test
+                    </h>
+            </div>
+        }
+ *
+ */
