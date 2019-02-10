@@ -1,0 +1,24 @@
+How React parent elements communicate to child elemnet is 
+
+        => through setting and changing the props of child elements
+        => props a element can not be changed at the component
+        => State is more own to the element and it can this.setState() by the Component
+
+        => even the props or state changes 
+            => the render method is re evaluated to calculate the elemnet by ReactDOM
+            => then delta is push to the real DOM
+
+        => Usually sate of one state becomes the props of its child components
+            => So if the props of the child component to  be changed    
+                => only way is child calls a callback passed by the parent to child component
+                    => then the call back changes the state of self(parent) and then
+                    ReactDOM passed changed data to respsctive child components and they get recalculated
+
+    => So changing data by a child component (which should be reflected in other components) 
+        is not straight forwared
+    (Ex : add an item to shopping cart and the total count of items shown on the header should be changed)
+
+    ==> This is where Redux comes to the picture (Singal global state)
+
+
+    
